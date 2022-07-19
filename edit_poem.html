@@ -1,0 +1,13 @@
+<doctype html="">
+<title>Edit Poem - Colorless Green Database</title>
+<h2>Edit Poem</h2>
+
+{% from "_formhelpers.html" import render_field %}
+<form method="post">
+    <dl>
+        {{ render_field(form.title) }}
+        {{ render_field(form.sentence) }}
+    </dl>
+    <p><input type="submit" value="Submit">
+</p></form>
+</doctype>
